@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as a;
+
+.btn {
+  display: inline-block;
+  background: a.$color-sub;
+  color: a.$color-accent;
+  width: 16rem;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 1rem;
+  transition: all .5s;
+  box-shadow: 3px 3px 5px a.$color-accent;
+  &:hover {
+    translate: 0 -.4rem;
+    scale: 1.01;
+    box-shadow: 2px 5px 5px a.$color-accent;
+  }
+  &:active {
+    translate: 0 .2rem;
+    scale: 1;
+    box-shadow: 2px 2px 5px a.$color-accent;
+  }
+}

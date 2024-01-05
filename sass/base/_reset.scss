@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as a;
+@use '../abstracts/mixins' as m;
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* headings */ 
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
+/* default body style */
+body {
+  background: a.$color-sub;
+  @include m.text;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+}
+
+/* picture */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* text */
+html,
+body {
+  font-size: 62.5%;
+}
+
+
+
+
+
+
+
+

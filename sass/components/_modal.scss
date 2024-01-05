@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as a;
+
+.main__color {
+  color: a.$color-accent;
+}
+    
+  
+

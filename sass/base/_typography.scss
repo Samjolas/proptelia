@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as a;
+@use '../abstracts/mixins' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@800&display=swap');
+
+.text {
+  &__accent {
+    font-size: a.$fs-accent;
+    font-family: a.$ff-main;
+    line-height: normal;
+  }
+  &__main {
+    font-size: a.$fs-main;
+  }
+
+
+}

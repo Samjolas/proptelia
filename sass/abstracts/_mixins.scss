@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as a;
+
+@mixin text {
+  font-family: a.$ff-sub;
+  font-style: normal;
+  font-weight: a.$fw-500;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+  color: a.$color-sub;
+  }
