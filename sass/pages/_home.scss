@@ -30,10 +30,16 @@
   display: grid;
   gap: 10rem;
   grid-template-columns: 1fr 1fr;
+  // &__main {
+
+  // }
   &__sub {
-    background: #000;
-    height: 50rem;
     margin: auto;
+  }
+  &__text {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    margin-top: 2rem;
   }
   
 }

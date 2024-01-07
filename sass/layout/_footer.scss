@@ -2,7 +2,6 @@
 
 .footer {
   display: grid;
-  // padding: a.$con-padding;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 10rem;
@@ -12,9 +11,7 @@
     font-weight: a.$fw-200;
   }
 }
-
 .contact {
-  
   &>* {
     display: block;
     color: a.$color-main;
@@ -25,7 +22,7 @@
     display: block;
     text-align: center;
   }
-  &__location {
+  // &__location {
 
-  }
+  // }
 }
