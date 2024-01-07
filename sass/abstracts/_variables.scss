@@ -3,9 +3,9 @@ $ff-main: 'Raleway', sans-serif;
 $ff-sub: 'Open Sans', sans-serif;
 
 // font size//
-$fs-accent: 10rem;
+$fs-accent: 7.6rem;
 $fs-main: 2rem;
-// $fs-sub: 2.7rem;
+$fs-sub: 1.5rem;
 // $fs-200: 2.1rem;
 // $fs-100: 1.1rem;
 
@@ -21,8 +21,13 @@ $fw-700: 700;
 // color //
 $color-accent: hsl(298, 79%, 19%);
 $color-main: hsl(0, 0%, 3%);
+$color-text: hsl(0, 0%, 18%);
 $color-sub: hsl(0, 0%, 97%);
+$color-bg: hsl(0, 0%, 98%);
 
+
+// padding //
+$con-padding: 4rem 14rem;
 
 
 

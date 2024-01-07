@@ -3,38 +3,37 @@
 
 .header {
   height: 110vh;
-  padding: 0 20rem;
+  padding: 0 8rem;
   background: url(../images/pattern.png) no-repeat center top;
   background-size: cover;
-  clip-path: polygon( 0 100%, 100% 85%, 100% 0, 0 0);
+  clip-path: polygon( 0 100%, 100% 88%, 100% 0, 0 0);
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  gap: 10rem;
   color: a.$color-sub;
   font-size: a.$fs-main;
-  padding: 0 4rem;
+  padding: 0 6rem;
   &__main {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     align-items: start;
+    justify-content: center;
   }
 }
 
-.website {
-  padding: 4rem 8rem;
-  &__des {
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-
+.about {
+  padding: a.$con-padding;
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  &__sub {
+    background: #000;
+    height: 50rem;
+    margin: auto;
   }
-  &__des1 {
-    background: #c1c1c1b5;
-    border-radius: 4rem;
-    height: 20rem;
-  }
+  
 }
