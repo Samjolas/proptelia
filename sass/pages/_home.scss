@@ -30,9 +30,6 @@
   display: grid;
   gap: 10rem;
   grid-template-columns: 1fr 1fr;
-  // &__main {
-
-  // }
   &__sub {
     margin: auto;
   }
@@ -41,5 +38,50 @@
     letter-spacing: 0.01em;
     margin-top: 2rem;
   }
-  
+}
+
+.service {
+  padding: a.$con-padding;
+  background: url(../images/pattern.png) no-repeat center top;
+  clip-path: polygon( 0 100%, 100% 88%, 100% 0, 0 12%);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  height: 110vh;
+  align-items: center;
+  gap: 5rem;
+  &__box {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4rem;
+    margin: auto;
+    
+  }
+  &__list {
+    background: a.$color-accent;
+    border-radius: 3rem;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: .8rem 1.3rem .8rem a.$color-main;
+  }
+  &__icon {
+    color: a.$color-accent;
+    font-size: 5rem;
+    background: a.$color-sub;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    border-radius: 50%;
+    translate: 0 -7rem;
+    margin-bottom: -7rem;
+  }
+  &__heading {
+    font-size: 3rem;
+    color: a.$color-sub;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    color: a.$color-main;
+    font-size: 2rem;
+  }
 }
