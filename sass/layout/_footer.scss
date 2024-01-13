@@ -1,6 +1,8 @@
 @use '../abstracts/variables' as a;
 
 .footer {
+  border-top: .2rem solid a.$color-accent;
+  padding: a.$con-padding;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -10,19 +12,35 @@
     font-style: normal;
     font-weight: a.$fw-200;
   }
-}
-.contact {
-  &>* {
-    display: block;
-    color: a.$color-main;
+  &__img {
+    height: 4rem;
+  }
+  &__contact {
+      display: grid;
+      gap: 1.5rem;
+    &>*{
+      color: a.$color-main;
+    }
+  } 
+  &__address {
+    &>* {
+      display: block;
+      text-align: center;
+    }
+    // &__location {
+  
+    // }
+  }
+  &__icons {
+    display: flex;
+    gap: 4rem;
+    justify-content: end;
+    &>* {
+      font-size: 3rem;
+    }
+  } 
+  &__location {
+    text-align: end;
   }
 }
-.address {
-  &>* {
-    display: block;
-    text-align: center;
-  }
-  // &__location {
 
-  // }
-}

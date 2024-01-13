@@ -58,16 +58,16 @@
     
   }
   &__list {
-    background: a.$color-accent;
+    background: #e1e1e1;
     border-radius: 3rem;
     padding: 3rem;
     text-align: center;
-    box-shadow: .8rem 1.3rem .8rem a.$color-main;
+    box-shadow: .8rem 1.3rem .8rem a.$color-accent;
   }
   &__icon {
-    color: a.$color-accent;
+    color: a.$color-sub;
     font-size: 5rem;
-    background: a.$color-sub;
+    background: a.$color-accent;
     width: 10rem;
     height: 10rem;
     line-height: 10rem;
@@ -76,12 +76,48 @@
     margin-bottom: -7rem;
   }
   &__heading {
+    font-family: a.$ff-main;
     font-size: 3rem;
-    color: a.$color-sub;
+    color: a.$color-accent;
     margin-bottom: 2rem;
   }
   &__text {
     color: a.$color-main;
     font-size: 2rem;
+  }
+}
+
+.contact {
+  padding: a.$con-padding;
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  &__sub {
+    margin: auto;
+  }
+  &__box {
+    display: grid;
+  }
+  &__detail {
+    display: grid;
+    gap: 4rem;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+  &__listBox {
+  }
+  &__icon {
+    color: a.$color-sub;
+    font-size: 3rem;
+    background: a.$color-accent;
+    min-width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    text-align: center;
   }
 }
