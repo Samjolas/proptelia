@@ -6,7 +6,7 @@
   padding: 0 8rem;
   background: url(../images/pattern.png) no-repeat center top;
   background-size: cover;
-  clip-path: polygon( 0 100%, 100% 88%, 100% 0, 0 0);
+  clip-path: polygon( 0 100%, 100% 92.5%, 100% 0, 0 0);
 }
 
 .hero {
@@ -43,7 +43,7 @@
 .service {
   padding: a.$con-padding;
   background: url(../images/pattern.png) no-repeat center top;
-  clip-path: polygon( 0 100%, 100% 88%, 100% 0, 0 12%);
+  clip-path: polygon( 0 100%, 100% 92.5%, 100% 0, 0 7.5%);
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
