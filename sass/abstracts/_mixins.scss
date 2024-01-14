@@ -7,4 +7,46 @@
   text-rendering: optimizeSpeed;
   line-height: 1.2;
   color: a.$color-text;
-  }
+}
+
+@mixin grid-style {
+  display: grid;
+  gap: a.$grid-gap;
+  grid-template-columns: 1fr 1.4fr;
+}
+
+@mixin bg-img {
+  background: url(../images/pattern.png) no-repeat center top;
+  background-size: cover;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: a.$content-gap;
+}
+
+@mixin t-center {
+  text-align: center;
+  align-items: center;
+}
+
+@mixin icon-small {
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@mixin icon-big {
+  font-size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  border-radius: 50%;
+  translate: 0 -7rem;
+  margin-bottom: -7rem;
+}
