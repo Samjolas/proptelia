@@ -72,7 +72,6 @@
   }
 }
 
-
 @media only screen and (max-width: 900px) {
   .header {
     height: auto;
@@ -121,7 +120,6 @@
   }
   .service {
     height: auto;
-    padding: 6rem;
     grid-template-columns: 1fr;
     text-align: center;
     &__box {
