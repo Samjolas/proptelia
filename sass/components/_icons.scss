@@ -1,2 +1,8 @@
 @use '../abstracts/variables' as a;
+@use '../abstracts/mixins' as m;
 
+.icon {
+  color: a.$color-sub;
+  background: a.$color-accent;
+  @include m.icon-small;
+}

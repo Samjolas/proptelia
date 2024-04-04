@@ -3,44 +3,16 @@
 .footer {
   border-top: .2rem solid a.$color-accent;
   padding: a.$con-padding;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
   align-items: center;
-  height: 10rem;
-  font-size: a.$fs-main;
-  &> * {
-    font-style: normal;
-    font-weight: a.$fw-200;
-  }
-  &__img {
-    height: 4rem;
-  }
-  &__contact {
-      display: grid;
-      gap: 1.5rem;
-    &>*{
-      color: a.$color-main;
-    }
-  } 
-  &__address {
-    &>* {
-      display: block;
-      text-align: center;
-    }
-    // &__location {
+  height: 5rem;
+  font-size: a.$fs-sub;
   
-    // }
+
+  &__text {
+    color: a.$color-text;
   }
-  &__icons {
-    display: flex;
-    gap: 4rem;
-    justify-content: end;
-    &>* {
-      font-size: 3rem;
-    }
-  } 
-  &__location {
-    text-align: end;
-  }
+
+
 }
 

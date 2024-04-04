@@ -4,7 +4,7 @@
   height: 110vh;
   padding: 0 8rem;
   @include m.bg-img;
-  clip-path: polygon( 0 100%, 100% 92.5%, 100% 0, 0 0);
+  // clip-path: polygon( 0 100%, 100% 92.5%, 100% 0, 0 0);
 }
 .hero {
   @include m.grid-style;
@@ -32,24 +32,21 @@
 .service {
   @include m.bg-img;
   @include m.t-center;
-  clip-path: polygon( 0 100%, 100% 92.5%, 100% 0, 0 7.5%);
   height: 110vh;
   &__box {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     gap: a.$content-gap;
     margin: auto;
   }
   &__list {
-    background: a.$color-sub;
+    background: a.$color-bg;
     border-radius: 3rem;
-    padding: 3rem;
-    text-align: center;
-  }
-  &__icon {
-    color: a.$color-sub;
-    background: a.$color-accent;
-    @include m.icon-big;
+    padding: 2rem;
+    transition: all .5s;
+    &:hover {
+      scale: 1.05;
+    }
   }
   &__heading {
     font-family: a.$ff-main;
@@ -72,10 +69,5 @@
     display: flex;
     gap: a.$content-gap;
     align-items: center;
-  }
-  &__icon {
-    color: a.$color-sub;
-    background: a.$color-accent;
-    @include m.icon-small;
   }
 }
