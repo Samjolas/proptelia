@@ -13,5 +13,14 @@
 .s__mb {
   translate: 0 5rem;
 } 
+
+@media only screen and (max-width: 900px) {
+  .s__mt {
+    translate: 0;
+  }  
+  .s__mb {
+    translate: 0;
+  }
+}
   
 

@@ -21,3 +21,10 @@
     box-shadow: 2px 2px 5px a.$color-accent;
   }
 }
+
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    margin: auto;
+  }
+}
