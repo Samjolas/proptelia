@@ -16,6 +16,19 @@
     font-size: a.$fs-sub;
     color: #86817F;
   }
+}
 
-
+@media only screen and (max-width: 700px) {
+  .text {
+    &__accent {
+      font-size: a.$fs-500;
+    }
+    &__main {
+      font-size: a.$fs-main;
+    }
+    &__sub {
+      font-size: a.$fs-sub;
+      color: #86817F;
+    }
+  }
 }
